@@ -15,7 +15,7 @@ const Component = () => {
         return res.json();
       })
       .then((data) => {
-        setCount([...count, { name: data.name, value: data.status }]);
+        setCount((preCount) => [...preCount, { name: data.name, value: data.status }]);
       });
   };
 
