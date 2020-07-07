@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
-import Demo3Child from './demo3';
-class Demo2 extends Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <Demo3Child />
-        </div>
-      </div>
-    );
-  }
-}
+import React, { useContext } from 'react';
+import { ThemeContext, IThemeContext } from '../demo1';
+const Demo2 = () => {
+  const context = useContext<IThemeContext>(ThemeContext);
+  return (
+    <div>
+      <div>{context.theme}</div>
+    </div>
+  );
+};
 
 export default Demo2;

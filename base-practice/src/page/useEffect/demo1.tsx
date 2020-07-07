@@ -11,7 +11,7 @@ const UseEffect: FC = () => {
     <div>
       <div>useEffect中的回调，只在第一次和每次更新时，执行</div>
       <div>Count:{count}</div>
-      <button onClick={() => setCount(count + 1)}>点我</button>
+      <button onClick={() => setCount((preCount) => preCount + 1)}>点我</button>
     </div>
   );
 };
