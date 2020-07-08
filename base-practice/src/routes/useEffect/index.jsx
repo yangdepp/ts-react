@@ -5,6 +5,7 @@ const Demo2 = lazy(() => import('../../page/useEffect/demo2'));
 const Demo3 = lazy(() => import('../../page/useEffect/demo3'));
 const Demo4 = lazy(() => import('../../page/useEffect/demo4'));
 const Demo5 = lazy(() => import('../../page/useEffect/demo5'));
+const Demo6 = lazy(() => import('../../page/useEffect/demo6'));
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
         path: '/demo5',
         title: 'demo5',
         component: Demo5,
+      },
+      {
+        path: '/demo6',
+        title: 'demo6',
+        component: Demo6,
       },
     ],
   },
