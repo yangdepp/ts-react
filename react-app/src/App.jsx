@@ -1,5 +1,6 @@
 import React, { createContext, Component } from 'react';
- const ThemeContext = createContext('light');
+import ArkComponent from './components/ark-test.jsx';
+const ThemeContext = createContext('light');
 
 class Demo1 extends Component {
   static contextType = ThemeContext;
@@ -10,6 +11,7 @@ class Demo1 extends Component {
       <div>
         {theme}
         <div>demo1</div>
+        <ArkComponent />
       </div>
     );
   }

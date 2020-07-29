@@ -6,6 +6,7 @@ import './style.scss';
 import Slider from '../components/slider';
 import { Layout } from 'antd';
 
+console.log(Routes)
 const { Sider, Content } = Layout;
 class App extends React.Component {
   render() {
